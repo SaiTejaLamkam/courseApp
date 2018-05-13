@@ -10,6 +10,9 @@ module.exports = {
         app: './src/app.module.js',
         styles: "./src/styles.scss"
     },
+    // sassLoader: {
+    //     includePaths: [path.resolve(__dirname, "./src")]
+    // },
     module: {
         rules: [
             {
@@ -48,6 +51,21 @@ module.exports = {
                         plugins: ['transform-object-rest-spread']
                     }
                 }
+            },
+            {
+                test: /\.scss$/,
+                use: [{
+                    loader: "style-loader" // creates style nodes from JS strings
+                }, {
+                    loader: "css-loader" // translates CSS into CommonJS
+                }, {
+                    loader: "sass-loader", // compiles Sass to CSS
+                    options: {
+                    //   includePaths: [
+                    //     join(dirname(module.filename), 'node_modules')
+                    //   ]
+                    }
+                }]
             }
         ]
     },
