@@ -6,6 +6,9 @@
 			$state.go("firstRoute");
 		}
 
+
+		
+
 	};
 	_appCtrl.$inject = ['$rootScope', '$scope', '$state'];
 	module.exports = _appCtrl;

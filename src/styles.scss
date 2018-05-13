@@ -1,1 +1,5 @@
 @import "modules/firstModule/first";
+@import "shared/directives/header/_header";
+// $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+// @import url('bootstrap/dist/css/bootstrap');
+@import "~bootstrap/scss/bootstrap";

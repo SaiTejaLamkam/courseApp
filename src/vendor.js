@@ -11,6 +11,7 @@ module.exports = function () {
 	require("bootstrap");
 	require("angular-aria");
 	require("angular-animate");
+	// require("bootstrap-loader");
 	// require("angular-sanitize");
 	require("angular-messages");
 	require("angular-material");

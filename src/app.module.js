@@ -7,7 +7,7 @@
 	// require("./shared/filters/filters");
 	// require("./shared/uiGridCustomDirectives/uiGridRowSelection");
 	// require("./shared/uiPdfMakeDirectives/uiPdfButton");
-	// require("./shared/directives/directives");
+	require("./shared/directives/directives");
 	require("./shared/controllers/controllers");
 	require("./modules/modules");
 	// require("./globals/polyfills");
@@ -54,7 +54,7 @@
 			// "ui.bootstrap.datetimepicker",
 			// "dru.ui.services",
 			// "dru.ui.filters",
-			// "dru.ui.directives",
+			"prohires.directives",
 			"prohires.controllers",
 			"prohires.modules",
 			// "ui.calendar",
