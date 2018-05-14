@@ -37,6 +37,14 @@ module.exports = {
                     use: "css-loader?minimize",
                 })
             },
+            { 
+                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+                loader: "url-loader?limit=10000&mimetype=application/font-woff" 
+              },
+              { 
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+                loader: "file-loader" 
+              },      
             {
                 test: /\.worker\.js$/,
                 use: { loader: 'worker-loader' }
@@ -66,7 +74,18 @@ module.exports = {
                     //   ]
                     }
                 }]
-            }
+            },
+            {
+                test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+                use: [{
+                  loader: 'file-loader',
+                  options: {
+                    name: '[name].[ext]',
+                    outputPath: 'fonts/',    // where the fonts will go
+                    publicPath: '../'       // override the default path
+                  }
+                }]
+              },
         ]
     },
     resolve: {
@@ -75,6 +94,7 @@ module.exports = {
         }
     },
     plugins: [
+        // new ExtractTextPlugin('bundle.css'),
         new HtmlWebpackPlugin({
             template: './src/index.html'
         }),

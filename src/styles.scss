@@ -1,5 +1,41 @@
-@import "modules/firstModule/first";
-@import "shared/directives/header/_header";
+
 // $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 // @import url('bootstrap/dist/css/bootstrap');
 @import "~bootstrap/scss/bootstrap";
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+@import "modules/home/home";
+@import "shared/directives/header/_header";
+@import "shared/directives/subFooter/_subFooter";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext");
+
+
+.main-body{
+    padding-top: 64px;
+    overflow-x: hidden;
+}
+
+.zero-padding{
+    padding: 0px !important;
+}
+
+.btn-xl{
+    font-size: 11px;
+    padding: 15px 45px;
+}
+
+.btn-outline{
+    border-radius: 300px;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #18bc9c;
+    border: 1px solid;
+    border-color: #18bc9c;
+}
+
+.btn-outline:hover {
+    color: #18bc9c;
+    border-color: #2c3e50;
+    background-color: #2c3e50;
+}

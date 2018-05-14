@@ -4,13 +4,13 @@
     function prohireConfigFunc($compileProvider, $stateProvider, $urlRouterProvider, $locationProvider) {
         $locationProvider.html5Mode(true);
         $urlRouterProvider.otherwise('/prohires');
-        $stateProvider
-        .state('prohires', {
-            url: '/prohires',
-            // template:require('./home.html'),
-            // abstract: true
-        }
-    );
+    //     $stateProvider
+    //     .state('prohires', {
+    //         url: '/prohires',
+    //         // template:require('./home.html'),
+    //         // abstract: true
+    //     }
+    // );
 
         $compileProvider.debugInfoEnabled(false);
         $compileProvider.commentDirectivesEnabled(false);

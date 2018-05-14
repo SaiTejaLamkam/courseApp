@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
-	require('./firstModule/first.module');
+	require('./home/home.module');
 	module.exports = angular.module('prohires.modules', [
-		'prohires.module.first',
+		'prohires.module.home',
 	]);
 })();
