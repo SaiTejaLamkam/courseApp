@@ -26,7 +26,7 @@
 			$(document).ready(function() {
 
 				var toggleAffix = function(affixElement, scrollElement, wrapper) {
-				
+				console.log(affixElement,"***");
 				  var height = affixElement.outerHeight(),
 					  top = wrapper.offset().top;
 				  
